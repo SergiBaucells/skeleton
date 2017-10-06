@@ -13,10 +13,46 @@ This is where your description should go. Try and limit it to a paragraph or two
 PSRs you support to avoid any confusion with users and contributors.
 
 ## Com funciona
+
 - **skeleton**: Paquet que volem desenvolupar. creat a partir https://github.com/thephpleague/skeleton.git
-- **skeleton_test**: Projecte La4ravel amb adminlte.
+- **skeleton_test**: Projecte Laravel amb adminlte.
 
+Comandes:
 
+ $ git clone git@github.com:thephpleage/skeleton.git
+ 
+ $ adminlte skeleton_test
+ 
+1) Executar prefill al paquet
+
+```bash
+
+$ php prefill.php
+
+```
+
+2) Restaurar git
+
+```bash
+
+$ cd skeleton
+$ rm -rf .git
+$ llum github:init
+
+```
+
+3) Studio
+
+```bash
+
+$ composer global require franzl/studio
+$ cd skeleton_test
+$ studio load ../skeleton
+$ composer require "baucells/skeleton1":"dev-master" 
+
+```
+
+Comproveu fitxers studio json i composer json.
 
 ## Structure
 
